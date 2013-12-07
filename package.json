@@ -1,0 +1,31 @@
+{
+    "name": "get-off-my-log",
+    "version": "0.1.0",
+    "description": "My JavaScript logging library. Significantly lamer than all the other log libraries, but this one is mine and I like it. So nerr. :p",
+    "homepage": "https://github.com/philbooth/get-off-my-log",
+    "bugs": "https://github.com/philbooth/get-off-my-log/issues",
+    "license": "MIT",
+    "author": "Phil Booth <pmbooth@gmail.com> (https://github.com/philbooth)",
+    "main": "./src",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/philbooth/get-off-my-log.git"
+    },
+    "keywords": [
+        "log",
+        "logger",
+        "logging"
+    ],
+    "devDependencies": {
+        "jshint": "2.2.x",
+        "mocha": "1.13.x",
+        "chai": "1.8.x",
+        "mockery": "1.4.x",
+        "spooks": "0.5.x"
+    },
+    "scripts": {
+        "lint": "./node_modules/.bin/jshint src --config .jshintrc",
+        "test": "./node_modules/.bin/mocha --ui tdd --reporter spec --colors test"
+    }
+}
+
