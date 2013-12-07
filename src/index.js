@@ -1,8 +1,6 @@
 'use strict'
 
-var check, methods;
-
-check = require('check-types');
+var methods;
 
 module.exports = {
     initialise: initialise
@@ -10,8 +8,6 @@ module.exports = {
 
 function initialise (origin) {
     var methodName, result = {};
-
-    check.verify.unemptyString(methodName);
 
     for (methodName in methods) {
         if (methods.hasOwnProperty(methodName)) {
