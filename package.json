@@ -19,11 +19,13 @@
     "devDependencies": {
         "jshint": "2.3.x",
         "mocha": "1.15.x",
-        "chai": "1.8.x"
+        "chai": "1.8.x",
+        "uglify-js": "2.4.x"
     },
     "scripts": {
         "lint": "./node_modules/.bin/jshint src --config .jshintrc",
-        "test": "./node_modules/.bin/mocha --ui tdd --reporter spec --colors test"
+        "test": "./node_modules/.bin/mocha --ui tdd --reporter spec --colors test",
+        "minify": "./node_modules/.bin/uglifyjs src/index.js --compress --mangle --output src/min.js"
     }
 }
 
