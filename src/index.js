@@ -6,12 +6,12 @@ module.exports = {
     initialise: initialise
 };
 
-function initialise (origin) {
+function initialise (origin, logger) {
     var methodName, result = {};
 
     for (methodName in methods) {
         if (methods.hasOwnProperty(methodName)) {
-            result[methodName] = methods[methodName].bind(null, origin);
+            result[methodName] = methods[methodName].bind(null, logger || console.log.bind(console), origin);
         }
     }
 
@@ -28,8 +28,8 @@ function createLogMethod (level) {
     return write.bind(null, level);
 }
 
-function write (level, origin, message) {
-    console.log([
+function write (level, logger, origin, message) {
+    logger([
         getTimestamp(),
         level,
         origin + ':',
