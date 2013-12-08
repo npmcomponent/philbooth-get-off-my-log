@@ -17,11 +17,9 @@
         "logging"
     ],
     "devDependencies": {
-        "jshint": "2.2.x",
-        "mocha": "1.13.x",
-        "chai": "1.8.x",
-        "mockery": "1.4.x",
-        "spooks": "0.5.x"
+        "jshint": "2.3.x",
+        "mocha": "1.15.x",
+        "chai": "1.8.x"
     },
     "scripts": {
         "lint": "./node_modules/.bin/jshint src --config .jshintrc",
