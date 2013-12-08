@@ -23,8 +23,8 @@
         "uglify-js": "2.4.x"
     },
     "scripts": {
-        "lint": "./node_modules/.bin/jshint src --config .jshintrc",
-        "test": "./node_modules/.bin/mocha --ui tdd --reporter spec --colors test",
+        "lint": "./node_modules/.bin/jshint src/index.js --config .jshintrc",
+        "test": "./node_modules/.bin/mocha --ui tdd --reporter spec --colors test/index.js",
         "minify": "./node_modules/.bin/uglifyjs src/index.js --compress --mangle --output src/min.js"
     }
 }

@@ -1,5 +1,12 @@
+/**
+ * My JavaScript logging library for node and browser.
+ * Probably lamer than the other log libraries, but this one is mine so nerr.
+ */
+
+/*globals console, define, module */
+
 (function (globals) {
-    'use strict'
+    'use strict';
 
     var functions, methods;
     
@@ -8,7 +15,17 @@
     };
 
     exportFunctions();
-    
+
+    /**
+     * Public function `initialise`.
+     *
+     * Returns a new logger that has `info`, `warn` and `error` methods.
+     *
+     * @param origin {string}      The logger name, appears in log messages.
+     * @param [logger] {function}  An optional logger function, can be used to
+     *                             e.g. log messages to a file. Defaults to
+     *                             `console.log`.
+     */
     function initialise (origin, logger) {
         var methodName, result = {};
     
