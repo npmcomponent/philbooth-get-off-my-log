@@ -36,7 +36,7 @@ instead of this library.
 
 It is fully supported by unit tests,
 is small of interface and implementation,
-and works in both [node.js][node]
+and works in both node.js
 and the browser.
 
 Furthermore,
@@ -178,6 +178,7 @@ var resizeLog, isFired, isDrawing;
 
 // Initialise the window resize logger
 resizeLog = log.initialise('resize');
+
 isFired = isDrawing = false;
 
 window.addEventListener('resize', throttleResize, false);
@@ -240,7 +241,7 @@ function update (query, data) {
 ## How do I set up the build environment?
 
 The build environment relies on
-Node.js,
+[Node.js][node],
 [JSHint],
 [Mocha],
 [Chai] and
