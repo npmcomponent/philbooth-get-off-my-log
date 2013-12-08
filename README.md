@@ -46,7 +46,7 @@ when you're me.
 
 ## What size is it?
 
-? kb unminified with comments, ? kb minified, ? kb minified + gzipped
+2.6 kb unminified with comments, 0.7 kb minified, 0.4 kb minified + gzipped
 
 ## How do I install it?
 
