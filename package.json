@@ -1,31 +1,13 @@
 {
-    "name": "get-off-my-log",
-    "version": "0.1.0",
-    "description": "My JavaScript logging library for node and browser. Probably lamer than the other log libraries, but this one is mine so nerr.",
-    "homepage": "https://github.com/philbooth/get-off-my-log",
-    "bugs": "https://github.com/philbooth/get-off-my-log/issues",
-    "license": "MIT",
-    "author": "Phil Booth <pmbooth@gmail.com> (https://github.com/philbooth)",
-    "main": "./src",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/philbooth/get-off-my-log.git"
-    },
-    "keywords": [
-        "log",
-        "logger",
-        "logging"
-    ],
-    "devDependencies": {
-        "jshint": "2.3.x",
-        "mocha": "1.15.x",
-        "chai": "1.8.x",
-        "uglify-js": "2.4.x"
-    },
-    "scripts": {
-        "lint": "./node_modules/.bin/jshint src/index.js --config .jshintrc",
-        "test": "./node_modules/.bin/mocha --ui tdd --reporter spec --colors test/index.js",
-        "minify": "./node_modules/.bin/uglifyjs src/index.js --compress --mangle --output src/min.js"
-    }
+  "name": "philbooth-get-off-my-log",
+  "description": "My JavaScript logging library. Significantly lamer than all the other log libraries, but this one is mine and I like it. So nerr. :p",
+  "version": "0.1.0",
+  "keywords": [
+    "log",
+    "logger",
+    "logging"
+  ],
+  "main": "src/index.js",
+  "dependencies": {},
+  "license": "MIT"
 }
-
